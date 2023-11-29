@@ -7,12 +7,12 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica;
 }
 
 .navbar {
-  padding: 20px;
-  padding-left : 50px;
+  padding: 10px;
+  padding-left: 50px;
   padding-right: 50px;
   display: flex;
   align-items: center;
@@ -31,11 +31,12 @@ body {
 .navbar li {
   display: inline-block;
 }
+
 .navbar li a {
   display: block;
   padding: 10px 20px;
   text-decoration: none;
-  color:black;
+  color: black;
   font-weight: bold;
 }
 
@@ -61,6 +62,7 @@ body {
 }
 
 .main1 {
+  flex: 1;
   width: 100%;
   height: 650px;
   background-color: #F1F3FF;
@@ -74,43 +76,29 @@ body {
 
 .main1 .text {
   float: left;
-  margin-top: 150px;
+  margin-top: 100px;
   margin-left: 60px;
   width: 30%;
 }
 
-h1 {
-  display: block;
-  font-size: 2em;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-}
-
-p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
 .main2 {
-    width: 100%;
-    margin: auto;
-    margin-top: 250px;
+  flex: 1;
+  width: 100%;
+  margin: auto;
+  margin-top: 250px;
+  flex: 1;
 }
+
 .img-kiri {
-    width: 35%;
-    float: left;
-    margin-left: 5%;
+  width: 35%;
+  float: left;
+  margin-left: 5%;
 }
+
 .main2 .text {
-    width: 50%;
-    float: right;
-    margin-right: 10%;
+  width: 50%;
+  float: right;
+  margin-right: 10%;
 }
 
 .main2 table td {
@@ -121,12 +109,14 @@ p {
   margin-top: 400px;
   margin-left: 10%;
   margin-right: 10%;
+  flex: 1;
 }
 
 .container3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   width: 100%;
+
 }
 
 .main3 .why {
@@ -138,6 +128,7 @@ p {
   border: solid 1px rgb(196, 196, 196);
 
 }
+
 .main3 .why img {
   width: 60px;
   margin-bottom: 20px;
@@ -146,24 +137,35 @@ p {
 .container4 {
   width: 100%;
   margin-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.main4{
+.main4 {
   width: 100%;
+  flex: 1;
 }
-.main4 .text{
+
+.main4 .text {
   display: block;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.main4 .comment{
-    justify-content: center;
-    background-color: #F1F3FF;
-    width: 70%;
-    border-radius: 20px;
-    margin-left: 10%
+
+.main4 .comment {
+  justify-content: center;
+  background-color: #F1F3FF;
+  width: 70%;
+  border-radius: 20px;
+  margin-left: 13%;
+  padding: 25px;
 }
+
+.comment p {
+  margin-left: 60px;
+}
+
 .carousel {
   width: 100%;
   position: relative;
@@ -202,40 +204,53 @@ p {
 }
 
 .carousel-controls button {
-  margin:  0 5%;
+  margin: 0 5%;
   padding: 5px 10px;
   font-size: 14px;
 }
+
 .comment .rate {
-    width: 100px ;
+  width: 100px;
+  margin-left: 45%;
 }
+
 .comment .pfp {
-    width: 25%;
+  width: 25%;
+  margin-left: 45%;
 }
+
 .comment .comment-text {
-  width: 50%;
+  /* width: 50%; */
   margin-top: 10px;
 }
+
 .comment .pfp img {
-    width: 50%;
+  width: 50%;
 }
-.carousel .prev-button, .carousel .next-button {
-    border: none;
-    background-color: #fff;
-    height: 100px;
+
+.carousel .prev-button,
+.carousel .next-button {
+  border: none;
+  background-color: #fff;
+  height: 100px;
 }
-.carousel .prev-button img, .carousel .next-button img {
-    width: 30px;
-    background-color: #fff;
-    border: solid 2px rgb(134, 134, 134);
-    border-radius: 100%;
-}
+
+.carousel .prev-button img,
 .carousel .next-button img {
-    transform: rotate(180deg);
+  width: 30px;
+  background-color: #fff;
+  border: solid 2px rgb(134, 134, 134);
+  border-radius: 100%;
 }
-.carousel .prev-button img:hover, .carousel .next-button img:hover {
+
+.carousel .next-button img {
+  transform: rotate(180deg);
+}
+
+.carousel .prev-button img:hover,
+.carousel .next-button img:hover {
   background-color: #A347A0;
-  border:solid 2px #A347A0;
+  border: solid 2px #A347A0;
   filter: invert(1);
 }
 
@@ -244,10 +259,13 @@ p {
   margin-top: 5%;
   justify-content: center;
   align-items: center;
-  height: 350px
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main5 {
+  flex: 1;
   background-color: blue;
   border-radius: 20px;
   width: 90%;
@@ -262,23 +280,28 @@ p {
   padding: 20px;
 }
 
-.container6{
+.container6 {
   margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.main6{
+.main6 {
+  flex: 1;
   margin-top: 100px;
   width: 95%;
   margin-left: 5%;
   display: block;
 }
-.main6 .text{
+
+.main6 .text {
   float: left;
   width: 40%;
   margin-top: 80px;
   height: 400px;
 }
-.question button{
+
+.question button {
   text-align: left;
   background: none;
   width: 100%;
@@ -287,7 +310,8 @@ p {
   font-size: larger;
   height: 50px;
 }
-.question{
+
+.question {
   border: solid 1px rgb(182, 182, 182);
   width: 80%;
   border-radius: 10px;
@@ -295,11 +319,12 @@ p {
   padding-right: 5%;
   margin-top: 20px;
 }
-.question img{
+
+.question img {
   float: right;
 }
 
-.FAQ{
+.FAQ {
   margin-top: 40px;
   float: right;
   width: 50%;
@@ -309,6 +334,8 @@ p {
   background-color: #f0f0f0;
   padding: 20px;
   margin-top: 550px;
+  display: flex;
+    flex-wrap: wrap;
 }
 
 .footer {
@@ -346,5 +373,108 @@ p {
 }
 
 .copy {
-  text-align: center; 
+  text-align: center;
 }
+
+.footer .bar {
+  margin-left: 95px;
+}
+
+
+  .main-content, .sidebar {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  @media(max-width: 768px) {
+
+    .navbar ul li {
+      display: none;
+    }
+    
+    
+    
+    .container1
+    .container2
+    .container3
+    .container4
+    .container5
+    .container6
+    .container7 {
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .main1 .text {
+      width: 100%;
+    }
+  .main1 .img-kanan {
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  .main2 .img-kiri {
+    width: 80%
+  }
+
+  .main2 .text {
+    width: 75%;
+    margin-top: 5%;
+    margin-left: 15%;
+  }
+
+  .main3 {
+    margin-top: 10%;
+  }
+
+  .main3 .text {
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+ .container3 {
+  grid-template-columns: none;
+ }
+  
+.container4 {
+  margin-top: 10%;
+}
+
+.main6 .text {
+  width: 100%;
+  text-align: center;
+  height: 100px;
+}
+.main6 .FAQ {
+  width: 100%;
+  align-content: center;
+}
+
+.footer {
+  display: block;
+}
+
+.copy {
+  text-align: left;
+}
+.footer .bar {
+  margin-left: 0px;
+}
+.container7 {
+  margin-top: 10%;
+}
+}
+
+@media(min-width: 768px) {
+  .navbar .toggle {
+    display: none;
+  }
+}
+
+
+
+
+
+    
+
