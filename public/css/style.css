@@ -610,6 +610,8 @@ body {
   height: 30px;
 }
 
+
+
 .custom-date .calendar {
   display: none;
   position: absolute;
@@ -696,13 +698,13 @@ body {
   margin-top: 5%;
 }
 
-.car-icons {
-  margin-top: 15px;
-}
+/* .car-icons {
+  margin-top: 10px;
+} */
 
 .car-description {
   height: 80px;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 .car-description::-webkit-scrollbar {
